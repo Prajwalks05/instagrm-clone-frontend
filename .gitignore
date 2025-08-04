@@ -32,7 +32,6 @@ migrate_working_dir/
 
 # Ignore all build folders except build/web
 build/*
-!build/web/
 
 # Symbolication related
 app.*.symbols
