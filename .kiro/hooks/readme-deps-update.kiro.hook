@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "name": "README Dependencies Updater",
+  "description": "Automatically updates the README.md file to include new dependencies in the tech stack section whenever pubspec.yaml is modified",
+  "version": "1",
+  "when": {
+    "type": "userTriggered",
+    "patterns": [
+      "pubspec.yaml"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "The pubspec.yaml file has been updated. Please analyze the dependencies section and update the README.md file to reflect any new dependencies in the tech stack column/section. Make sure to maintain the existing format and only add genuinely new dependencies that weren't previously listed."
+  }
+}

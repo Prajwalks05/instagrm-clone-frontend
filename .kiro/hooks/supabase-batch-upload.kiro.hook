@@ -1,0 +1,18 @@
+{
+  "enabled": true,
+  "name": "Supabase Batch Upload Optimization",
+  "description": "Monitors image upload functionality to ensure API calls are batched by UUID rather than making separate calls for each UUID when uploading images to Supabase",
+  "version": "1",
+  "when": {
+    "type": "userTriggered",
+    "patterns": [
+      "lib/services/*.dart",
+      "lib/screens/*.dart",
+      "lib/components/*.dart"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Review the image upload code to Supabase and optimize it to batch API responses by UUID. Instead of making separate API calls for each UUID, group the responses of a single UUID into an array under that UUID. Focus on the upload logic and API call structure to ensure efficient batching."
+  }
+}
