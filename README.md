@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 📸 Instagram Clone
 
 A feature-rich Instagram clone built with Flutter, replicating the core functionality and user experience of the popular social media platform.
